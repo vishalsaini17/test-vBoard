@@ -122,7 +122,7 @@ export default function MiniDrawer() {
           </IconButton>
           <Box sx={{ flexGrow: 1 }}>
             <Typography variant="h6" noWrap component="div">
-              Mini variant drawer
+              <Link to="/home">LOGO</Link>
             </Typography>
           </Box>
 
