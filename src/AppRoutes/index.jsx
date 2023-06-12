@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { DashboardLayout } from "../layout";
-import { Courses, Home } from "../pages";
+import { Courses, Home, Subjects } from "../pages";
 
 const AppRoutes = () => {
   return (
@@ -9,6 +9,7 @@ const AppRoutes = () => {
         <Route path="/" element={<DashboardLayout />}>
           <Route index element={<Home />} />
           <Route path="courses" element={<Courses />} />
+          <Route path="subjects" element={<Subjects />} />
         </Route>
       </Routes>
     </>

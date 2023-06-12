@@ -20,7 +20,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { Link, Outlet } from 'react-router-dom';
 import { Avatar } from '@mui/material';
-import { MenuBookRounded } from '@mui/icons-material';
+import { MenuBookRounded, Subject, Topic } from '@mui/icons-material';
 
 
 
@@ -120,10 +120,14 @@ export default function MiniDrawer() {
           >
             <MenuIcon />
           </IconButton>
-          <Box sx={{ flexGrow: 1 }}>
+          <Box sx={{ flexGrow: 0 }}>
             <Typography variant="h6" noWrap component="div">
-              <Link to="/home">LOGO</Link>
+              <Link to="/">LOGO</Link>
             </Typography>
+          </Box>
+
+          <Box sx={{ flexGrow: 1, px: 3 }}>
+asdasda
           </Box>
 
           <Box sx={{ flexGrow: 0 }}>
@@ -141,7 +145,8 @@ export default function MiniDrawer() {
         </DrawerHeader>
         <Divider />
         <List>
-          <MenuListItem isMenuOpen={open} link='/courses' text={`Course`} icon={<MenuBookRounded />} />
+          <MenuListItem isMenuOpen={open} link='/courses' text={`Course`} icon={<Topic />} />
+          <MenuListItem isMenuOpen={open} link='/subjects' text={`Subjects`} icon={<Subject />} />
         </List>
         <Divider />
         <List>
